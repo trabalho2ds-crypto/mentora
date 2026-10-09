@@ -1,0 +1,418 @@
+/* =================================
+   CONFIGURAÇÕES GERAIS
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f3e8;
+    color: #2f4f3a;
+}
+
+
+/* =================================
+   CABEÇALHO
+================================= */
+
+.cabecalho {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.cabecalho h1 {
+    margin: 0;
+}
+
+.cabecalho nav {
+    display: flex;
+    gap: 25px;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: #2f4f3a;
+    font-weight: bold;
+}
+
+/* =================================
+   PÁGINA INICIAL
+================================= */
+
+.inicio {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f7f3e8;
+}
+
+.inicio h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.inicio p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.inicio button {
+    background-color: #6b8f71;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.inicio button:hover {
+    background-color: #52735a;
+}
+
+/* =================================
+   CARDS DE FERRAMENTAS
+================================= */
+
+.ferramentas {
+    background-color: white;
+    text-align: center;
+    padding: 70px 40px;
+}
+
+.ferramentas h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f7f3e8;
+    width: 280px;
+    padding: 30px;
+    border-radius: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.card button {
+    background-color: #6b8f71;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #52735a;
+}
+
+/* =================================
+   PÁGINA DE TAREFAS
+================================= */
+
+.tarefas {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 50px;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.tarefas h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#input-tarefa {
+    width: 65%;
+    padding: 14px 18px;
+    border: 2px solid #d8cdb8;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+#input-tarefa:focus {
+    border-color: #6b8f71;
+}
+
+#btn-adicionar {
+    padding: 14px 22px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 20px;
+    background-color: #6b8f71;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btn-adicionar:hover {
+    background-color: #52735a;
+}
+
+
+/* Lista de tarefas */
+
+#lista-tarefas {
+    list-style: none;
+    padding: 0;
+    margin-top: 35px;
+}
+
+
+/* Cada tarefa */
+
+#lista-tarefas li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f7f3e8;
+    margin-bottom: 12px;
+    padding: 15px 18px;
+    border-radius: 15px;
+}
+
+
+/* Texto da tarefa */
+
+#lista-tarefas li span {
+    flex: 1;
+    text-align: left;
+}
+
+
+/* Botões das tarefas */
+
+#lista-tarefas button {
+    border: none;
+    border-radius: 15px;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+
+/* Botão concluir */
+
+#lista-tarefas li button:first-of-type {
+    background-color: #d8e5d5;
+    color: #2f4f3a;
+}
+
+
+/* Botão excluir */
+
+#lista-tarefas li button:last-of-type {
+    background-color: #ead8d2;
+    color: #754d42;
+}
+
+
+/* Tarefa concluída */
+
+.concluida {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* =================================
+   PÁGINA POMODORO
+================================= */
+
+.pomodoro {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 60px 40px;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.pomodoro h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+
+/* =================================
+   VISOR DO TEMPO
+================================= */
+
+#timer {
+    font-size: 80px;
+    font-weight: bold;
+    color: #2f4f3a;
+    margin-bottom: 40px;
+}
+
+
+/* =================================
+   BOTÕES
+================================= */
+
+.botoes-pomodoro {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.botoes-pomodoro button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    background-color: #6b8f71;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botoes-pomodoro button:hover {
+    background-color: #52735a;
+    transform: translateY(-2px);
+}
+
+
+/* =================================
+   BOTÃO DE PAUSA
+================================= */
+
+#btn-pausa-curta {
+    background-color: #d8cdb8;
+    color: #2f4f3a;
+}
+
+#btn-pausa-curta:hover {
+    background-color: #c8baa1;
+}
+
+/* =================================
+   PÁGINA SOBRE
+================================= */
+
+.sobre {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.sobre > p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+
+/* =================================
+   CARDS DA PÁGINA SOBRE
+================================= */
+
+.sobre-card {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    text-align: left;
+}
+
+.sobre-card h3 {
+    color: #2f4f3a;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.sobre-card p {
+    line-height: 1.7;
+    color: #4f5f52;
+}
+
+
+/* =================================
+   LISTA DE FERRAMENTAS
+================================= */
+
+.sobre-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.sobre-card li {
+    background-color: #f7f3e8;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+
+/* =================================
+   FRASE DO MENTORA
+================================= */
+
+.frase {
+    background-color: #d8e5d5;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 25px;
+}
+
+.frase p {
+    margin: 0;
+    color: #2f4f3a;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+
+/* =================================
+   RODAPÉ
+================================= */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    color: #52735a;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
